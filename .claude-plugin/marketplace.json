@@ -1,0 +1,27 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "fitgutlab",
+  "description": "FitScope — skeletal muscle mitochondrial oxidative capacity from NIRS arterial-occlusion data, for Claude Code.",
+  "owner": {
+    "name": "FITGut LAB"
+  },
+  "plugins": [
+    {
+      "name": "fitscope",
+      "source": "./",
+      "description": "Runs and audits the NIRS mitochondrial oxidative capacity pipeline (clean → analyse → plot) end to end: cleans a raw Artinis Oxysoft export, computes mVO2 per occlusion with Ryan et al. 2012's blood-volume correction, fits the monoexponential recovery time constant Tc, and reports QC/plausibility flags. Follows Ryan et al. 2012 (J Appl Physiol) and Ryan et al. 2014 (J Physiol).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "science",
+      "keywords": [
+        "nirs",
+        "mitochondrial-capacity",
+        "near-infrared-spectroscopy",
+        "exercise-physiology",
+        "arterial-occlusion",
+        "vo2",
+        "biomechanics"
+      ]
+    }
+  ]
+}
