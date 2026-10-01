@@ -1,0 +1,19 @@
+{
+  "name": "fitscope",
+  "version": "0.1.0",
+  "description": "Runs and audits the NIRS mitochondrial oxidative capacity pipeline (clean, analyse, plot) for skeletal-muscle recovery-kinetics studies: raw Artinis Oxysoft export -> cleaned 1 Hz dataset -> mVO2 per occlusion with blood-volume correction -> monoexponential recovery time constant Tc. Ships the unmodified reference R pipeline, a pipeline-runner subagent, and a skill that orchestrates both and interprets results against the method's own plausibility guardrails (Ryan et al. 2012 J Appl Physiol; Ryan et al. 2014 J Physiol).",
+  "author": {
+    "name": "FITGut LAB"
+  },
+  "license": "MIT",
+  "keywords": [
+    "nirs",
+    "mitochondrial-capacity",
+    "near-infrared-spectroscopy",
+    "exercise-physiology",
+    "arterial-occlusion",
+    "recovery-kinetics",
+    "vo2",
+    "time-constant"
+  ]
+}
