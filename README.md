@@ -1,4 +1,4 @@
-# FitScope — skeletal muscle mitochondrial oxidative capacity from NIRS
+# Skeletal muscle mitochondrial oxidative capacity from NIRS 
 
 Estimates skeletal muscle mitochondrial oxidative capacity from near-infrared
 spectroscopy using the repeated arterial-occlusion method of Ryan et al. 2012
@@ -12,7 +12,7 @@ mitochondrial capacity.
 ## Pipeline
 
 Three steps, each a folder with its own README. Run in order, per subject:
-
+.
 ```bash
 Rscript cleaning_STEP/clean_nirs.R   "Practice12.xlsx"   # raw export -> 1 s dataset
 Rscript analysis_STEP/analyse_nirs.R "Practice12"        # -> mVO2 per occlusion, Tc
@@ -30,42 +30,6 @@ writes into its own folder regardless of where you run it from.
 
 Requires R with `readxl dplyr tidyr readr ggplot2 patchwork`.
 
-## Two more ways to run it: a Shiny app, and a Claude Code plugin
-
-`cleaning_STEP/`, `analysis_STEP/` and `plotting_STEP/` above are the single
-source of truth — nothing below reimplements cleaning, correction, or
-curve-fitting logic. Both front ends copy those three scripts unchanged into
-a working project and shell out to `Rscript`.
-
-**`app/`** — a Shiny app: upload or pick a raw `.xlsx`, run clean → analyse →
-plot (all at once or step by step), and view the console log, QC report,
-recovery-fit table with plausibility flags, figures, and output files.
-
-```bash
-cd app
-R -e 'shiny::runApp(".")'
-```
-
-See [`app/README.md`](app/README.md).
-
-**`.claude-plugin/`, `skills/`, `agents/`** — a Claude Code plugin. In Claude
-Code:
-
-```
-/plugin marketplace add fitgutlab/FitScope
-/plugin install fitscope@fitgutlab
-```
-
-Then either describe the task ("clean and analyse Practice12.xlsx") and let
-the `nirs-pipeline` skill trigger automatically, or run it directly:
-
-```
-/fitscope:nirs-pipeline Practice12.xlsx
-```
-
-For several subjects at once, or to keep a long run's console/CSV output out
-of the main conversation, delegate to the `pipeline-runner` subagent instead.
-
 ## Method, in brief
 
 1. A cuff is inflated above arterial pressure over the muscle while NIRS records
@@ -79,10 +43,7 @@ of the main conversation, delegate to the `pipeline-runner` subagent instead.
    mitochondrial oxidative capacity.
 
 The blood-volume correction (Ryan 2012, Method 1) and the 3 s slope window are
-documented in [`analysis_STEP/README.md`](analysis_STEP/README.md). A
-converged fit is not automatically a trustworthy one — see `CLAUDE.md` for the
-plausibility guardrails both the app and the plugin apply before reporting a
-Tc as final.
+documented in [`analysis_STEP/README.md`](analysis_STEP/README.md).
 
 ## Study protocol
 
@@ -115,10 +76,6 @@ methodological choices, plus one-off diagnostics. See
 [`archive/README.md`](archive/README.md). Nothing there is part of the current
 pipeline.
 
-## License
 
-MIT — see [`LICENSE.md`](LICENSE.md).
-
-## Citation
-
+Citation
 Philip Appiah, Clara de Torres, Ines Machaz, Andrea Osorio & FITGut LAB. (2026). fitgutlab/FitScan: v1.0.0 (Version 1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22885722
