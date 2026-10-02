@@ -1,16 +1,16 @@
 ![FitScope](app/www/fitscope-logo-dark.png)
 
-# Intro 
+# Intro (INES)
 Muscle biopsies are highly intrusive yet it is the only way that we use to measure 
 muscle health. A hypothesized strategy is using infrared light. etc, etc. 
 
-# Explanation of NIRS 
+# Explanation of NIRS (ANDREA)
 With two lasers, the NIRS is able to measure oxygenated hemoglobin, deoxygenated hemoglobin, total hemoglobin, different hemoglobin. etc etc connection to how those parameters are indicators of muscle health. 
 
-# NIRS Procedure 
+# NIRS Procedure (ANDREA)
 Explain the whole procedure, KEY TO CONNECT TO THE ONLY TWO ARTICLES WRITTEN ABOUT THE NIRS
 
-# NIRS Limitation
+# NIRS Limitation (CLARA)
 Raw data is quite challenging to interpret so we developed FitScope 
 
 # FitScope
