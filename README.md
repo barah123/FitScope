@@ -6,15 +6,54 @@ muscle health. A hypothesized strategy is using infrared light. etc, etc.
 
 # Explanation of NIRS (ANDREA)
 With two lasers, the NIRS is able to measure oxygenated hemoglobin, deoxygenated hemoglobin, total hemoglobin, different hemoglobin. etc etc connection to how those parameters are indicators of muscle health. 
+Ideas written by Philip: ## What NIRS measures, and why occlusion
+
+Near-infrared light (roughly 700–900 nm) penetrates skin, fat and a few
+centimetres of muscle, and is absorbed differently depending on how much of
+the local haemoglobin/myoglobin pool is carrying oxygen. Measuring
+attenuation at several wavelengths gives a continuous, non-invasive readout
+of oxygenated (**O2Hb**) versus deoxygenated (**HHb**) haemoglobin/myoglobin
+in the muscle under the sensor — in real time, with nothing drawn and nothing
+inserted.
+
+On its own that signal reflects a balance of two things happening at once:
+how fast oxygen is being *delivered* (blood flow) and how fast it's being
+*consumed* (mitochondrial respiration). Arterial occlusion separates them.
+Inflating a pneumatic cuff above systolic pressure over the limb stops
+arterial inflow entirely: no oxygen arrives, and consumption continues. For
+the few seconds the cuff is up, the **slope** of HHb rising (or O2Hb falling)
+is therefore a direct, blood-flow-independent readout of muscle oxygen
+consumption — **mV̇O2**.
+
+A smaller Tc means faster recovery and greater mitochondrial oxidative
+capacity. It's a well-validated, repeatable, non-invasive proxy for
+mitochondrial function in the specific muscle studied, in place of a biopsy.
 
 # NIRS Procedure (ANDREA)
 Explain the whole procedure, KEY TO CONNECT TO THE ONLY TWO ARTICLES WRITTEN ABOUT THE NIRS
+Ideas written by Philip: 
+- One occlusion at **rest** gives resting mV̇O2.
+- A rapid series of these occlusions **after exercise** tracks mV̇O2 as it
+  decays back toward the resting value. A muscle with greater mitochondrial
+  oxidative capacity resynthesizes ATP — and so returns oxygen consumption to
+  baseline — faster, so its recovery curve decays faster.
+- Fitting that decay to `mV̇O2(t) = Rest + Delta · e^(−t/Tc)` yields **Tc**,
+  the time constant of recovery, and `k = 1/Tc`.
 
 # NIRS Limitation (CLARA)
 Raw data is quite challenging to interpret so we developed FitScope 
 
-# FitScope
+## Research objective
+Take a raw Oxysoft NIRS export from a repeated-occlusion recovery-kinetics
+protocol and produce a **trustworthy** Tc (and k) for each subject — the
+operative word being *trustworthy*, because, per above, a converged fit is
+not automatically one. The pipeline this repository ships was specified
+decision-by-decision by the lab's data owner (recorded in
+`data_cleaning_transcript.md` and `NIRS_Pipeline_Questions_and_Challenges.docx`),
+not derived or guessed at, and the two front ends below exist to run that
+exact pipeline without ever reimplementing it.
 
+# FitScope
 A Shiny app and a Claude Code plugin for estimating **skeletal muscle
 mitochondrial oxidative capacity** from near-infrared spectroscopy (NIRS)
 arterial-occlusion recordings, following the repeated-occlusion method of
@@ -44,50 +83,7 @@ the reason stated.
 FitScope encodes the checks that catch both failures and refuses to let a
 result through without them. See [Guardrails](#guardrails) below.
 
-## What NIRS measures, and why occlusion
-
-Near-infrared light (roughly 700–900 nm) penetrates skin, fat and a few
-centimetres of muscle, and is absorbed differently depending on how much of
-the local haemoglobin/myoglobin pool is carrying oxygen. Measuring
-attenuation at several wavelengths gives a continuous, non-invasive readout
-of oxygenated (**O2Hb**) versus deoxygenated (**HHb**) haemoglobin/myoglobin
-in the muscle under the sensor — in real time, with nothing drawn and nothing
-inserted.
-
-On its own that signal reflects a balance of two things happening at once:
-how fast oxygen is being *delivered* (blood flow) and how fast it's being
-*consumed* (mitochondrial respiration). Arterial occlusion separates them.
-Inflating a pneumatic cuff above systolic pressure over the limb stops
-arterial inflow entirely: no oxygen arrives, and consumption continues. For
-the few seconds the cuff is up, the **slope** of HHb rising (or O2Hb falling)
-is therefore a direct, blood-flow-independent readout of muscle oxygen
-consumption — **mV̇O2**.
-
-- One occlusion at **rest** gives resting mV̇O2.
-- A rapid series of these occlusions **after exercise** tracks mV̇O2 as it
-  decays back toward the resting value. A muscle with greater mitochondrial
-  oxidative capacity resynthesizes ATP — and so returns oxygen consumption to
-  baseline — faster, so its recovery curve decays faster.
-- Fitting that decay to `mV̇O2(t) = Rest + Delta · e^(−t/Tc)` yields **Tc**,
-  the time constant of recovery, and `k = 1/Tc`.
-
-A smaller Tc means faster recovery and greater mitochondrial oxidative
-capacity. It's a well-validated, repeatable, non-invasive proxy for
-mitochondrial function in the specific muscle studied, in place of a biopsy.
-
-## Research objective
-
-Take a raw Oxysoft NIRS export from a repeated-occlusion recovery-kinetics
-protocol and produce a **trustworthy** Tc (and k) for each subject — the
-operative word being *trustworthy*, because, per above, a converged fit is
-not automatically one. The pipeline this repository ships was specified
-decision-by-decision by the lab's data owner (recorded in
-`data_cleaning_transcript.md` and `NIRS_Pipeline_Questions_and_Challenges.docx`),
-not derived or guessed at, and the two front ends below exist to run that
-exact pipeline without ever reimplementing it.
-
 ## What FitScope is
-
 Three fixed R scripts are the single source of truth for every number this
 project produces:
 
@@ -238,7 +234,7 @@ Appiah, P., de Torres, C., Machaz, I., Osorio, A. & FITGut LAB. (2026).
 fitgutlab/FitScan: v1.0.0 (Version 1) [Computer software]. Zenodo.
 https://doi.org/10.5281/zenodo.22885722
 
-## Credits
+## References 
 
 Method: Ryan, T.E. et al. (2012), *J Appl Physiol* 113:175–183; Ryan, T.E. &
 Neufer, P.D. (2014), *J Physiol* 592.15:3231–3241. Cleaning and QC procedure
