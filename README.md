@@ -1,5 +1,18 @@
 ![FitScope](app/www/fitscope-logo-dark.png)
 
+# Intro 
+Muscle biopsies are highly intrusive yet it is the only way that we use to measure 
+muscle health. A hypothesized strategy is using infrared light. etc, etc. 
+
+# Explanation of NIRS 
+With two lasers, the NIRS is able to measure oxygenated hemoglobin, deoxygenated hemoglobin, total hemoglobin, different hemoglobin. etc etc connection to how those parameters are indicators of muscle health. 
+
+# NIRS Procedure 
+Explain the whole procedure, KEY TO CONNECT TO THE ONLY TWO ARTICLES WRITTEN ABOUT THE NIRS
+
+# NIRS Limitation
+Raw data is quite challenging to interpret so we developed FitScope 
+
 # FitScope
 
 A Shiny app and a Claude Code plugin for estimating **skeletal muscle
