@@ -29,7 +29,7 @@ A smaller Tc means faster recovery and greater mitochondrial oxidative
 capacity. It's a well-validated, repeatable, non-invasive proxy for
 mitochondrial function in the specific muscle studied, in place of a biopsy."
 
-"Near-infrared spectroscopy (NIRS) is a noninvasive technique that monitors regional tissue oxygenation reflecting perfusion status. Near-infrared spectroscopy has the ability to continuously and simultaneously monitor tissue perfusion in different organ systems at the bedside without interrupting routine care. Research has demonstrated its benefit in monitoring cerebral, intestinal, and renal perfusion to detect potential ischemic episodes. Near-infrared spectroscopy can augment current physiologic monitoring to increase awareness of abnormal perfusion status in the preterm population and potentially reduce risks associated with many diseases that may lead to ischemic injury."
+"Near-infrared spectroscopy (NIRS) is a noninvasive technique that monitors regional tissue oxygenation reflecting perfusion status. Near-infrared spectroscopy has the ability to continuously and simultaneously monitor tissue perfusion in different organ systems at the bedside without interrupting routine care. Research has demonstrated its benefit in monitoring cerebral, intestinal, and renal perfusion to detect potential ischemic episodes. Near-infrared spectroscopy can augment current physiologic monitoring to increase awareness of abnormal perfusion status in the preterm population and potentially reduce risks associated with many diseases that may lead to ischemic injury."  https://pubmed.ncbi.nlm.nih.gov/22123468/ 
 
 # NIRS Procedure (ANDREA)
 Explain the whole procedure, KEY TO CONNECT TO THE ONLY TWO ARTICLES WRITTEN ABOUT THE NIRS
