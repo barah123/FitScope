@@ -8,7 +8,7 @@ muscle health. A hypothesized strategy is using infrared light. etc, etc.
 With two lasers, the NIRS is able to measure oxygenated hemoglobin, deoxygenated hemoglobin, total hemoglobin, different hemoglobin. etc etc connection to how those parameters are indicators of muscle health. 
 Ideas written by Philip: ## What NIRS measures, and why occlusion
 
-Near-infrared light (roughly 700–900 nm) penetrates skin, fat and a few
+"Near-infrared light (roughly 700–900 nm) penetrates skin, fat and a few
 centimetres of muscle, and is absorbed differently depending on how much of
 the local haemoglobin/myoglobin pool is carrying oxygen. Measuring
 attenuation at several wavelengths gives a continuous, non-invasive readout
@@ -27,7 +27,9 @@ consumption — **mV̇O2**.
 
 A smaller Tc means faster recovery and greater mitochondrial oxidative
 capacity. It's a well-validated, repeatable, non-invasive proxy for
-mitochondrial function in the specific muscle studied, in place of a biopsy.
+mitochondrial function in the specific muscle studied, in place of a biopsy."
+
+"Near-infrared spectroscopy (NIRS) is a noninvasive technique that monitors regional tissue oxygenation reflecting perfusion status. Near-infrared spectroscopy has the ability to continuously and simultaneously monitor tissue perfusion in different organ systems at the bedside without interrupting routine care. Research has demonstrated its benefit in monitoring cerebral, intestinal, and renal perfusion to detect potential ischemic episodes. Near-infrared spectroscopy can augment current physiologic monitoring to increase awareness of abnormal perfusion status in the preterm population and potentially reduce risks associated with many diseases that may lead to ischemic injury."
 
 # NIRS Procedure (ANDREA)
 Explain the whole procedure, KEY TO CONNECT TO THE ONLY TWO ARTICLES WRITTEN ABOUT THE NIRS
