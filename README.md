@@ -31,8 +31,7 @@ Oxygen moves through our bodies in hemoglobin. Oxygenated hemoglobin is what com
 
 # NIRS Procedure (ANDREA)
 Explain the whole procedure, KEY TO CONNECT TO THE ONLY TWO ARTICLES WRITTEN ABOUT THE NIRS
- Ideas written by Philip: 
-[- One occlusion at **rest** gives resting mV̇O2.
+ Ideas written by Philip: [- One occlusion at **rest** gives resting mV̇O2.
 - A rapid series of these occlusions **after exercise** tracks mV̇O2 as it
   decays back toward the resting value. A muscle with greater mitochondrial
   oxidative capacity resynthesizes ATP — and so returns oxygen consumption to
