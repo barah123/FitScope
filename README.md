@@ -5,17 +5,16 @@ Muscle biopsies are highly intrusive yet it is the only way that we use to measu
 muscle health. A hypothesized strategy is using infrared light. etc, etc. 
 
 # Explanation of NIRS (ANDREA)
-With two lasers, the NIRS is able to measure oxygenated hemoglobin, deoxygenated hemoglobin, total hemoglobin, difference between O2 and CO2 hemoglobin. ##EXPAND: explain to how those parameters are indicators of muscle health.## 
+With two lasers, the NIRS is able to measure oxygenated hemoglobin, deoxygenated hemoglobin, total hemoglobin, difference between oxygenated and deoxygenated hemoglobin. EXPAND: explain to how those parameters are indicators of muscle health.
 
 Ideas written by Philip: ## What NIRS measures, and why occlusion
-"Near-infrared light (roughly 700–900 nm) penetrates skin, fat and a few
+[ "Near-infrared light (roughly 700–900 nm) penetrates skin, fat and a few
 centimetres of muscle, and is absorbed differently depending on how much of
 the local haemoglobin/myoglobin pool is carrying oxygen. Measuring
 attenuation at several wavelengths gives a continuous, non-invasive readout
 of oxygenated (**O2Hb**) versus deoxygenated (**HHb**) haemoglobin/myoglobin
 in the muscle under the sensor — in real time, with nothing drawn and nothing
 inserted.
-
 On its own that signal reflects a balance of two things happening at once:
 how fast oxygen is being *delivered* (blood flow) and how fast it's being
 *consumed* (mitochondrial respiration). Arterial occlusion separates them.
@@ -24,14 +23,11 @@ arterial inflow entirely: no oxygen arrives, and consumption continues. For
 the few seconds the cuff is up, the **slope** of HHb rising (or O2Hb falling)
 is therefore a direct, blood-flow-independent readout of muscle oxygen
 consumption — **mV̇O2**.
-
 A smaller Tc means faster recovery and greater mitochondrial oxidative
 capacity. It's a well-validated, repeatable, non-invasive proxy for
 mitochondrial function in the specific muscle studied, in place of a biopsy."
-
-"Near-infrared spectroscopy (NIRS) is a noninvasive technique that monitors regional tissue oxygenation reflecting perfusion status. Near-infrared spectroscopy has the ability to continuously and simultaneously monitor tissue perfusion in different organ systems at the bedside without interrupting routine care. Research has demonstrated its benefit in monitoring cerebral, intestinal, and renal perfusion to detect potential ischemic episodes. Near-infrared spectroscopy can augment current physiologic monitoring to increase awareness of abnormal perfusion status in the preterm population and potentially reduce risks associated with many diseases that may lead to ischemic injury."  https://pubmed.ncbi.nlm.nih.gov/22123468/ 
-
-Oxygen moves through our bodies in hemoglobin. Oxygenated hemoglobin is what comes from our lungs and travels to our tissues in order to provide our tissues with the oxygen they need. Deoxygenated hemoglobin is what travels away from our tissues back to our lungs and heart for more oxygen. As we use our brain, oxygenated hemoglobin travels to the areas of the brain we are using and deoxygenated hemoglobin flows away from those areas. The cool thing about the hemoglobin is that light travels through oxygenated and deoxygenated hemoglobin differently. We can use this difference to pick up on the amount of oxygenated and deoxygenated hemoglobin in different areas of the brain... The NIRS system is made up of a cap that is kind of like a swim cap and sources (photo-transmitter probe in the diagram) and detectors (photo-receiver probe in the diagram). The sources are essentially light bulbs that give off light of very specific wavelengths. The detectors pick up on the specific wavelengths of light, and how much light the detectors pick up on tells us how much light came back after traveling through the brain tissue" (We can translate this to our purposes using calve muscles) https://cheathamlab.com/index.php/near-infrared-spectroscopy/
+"Near-infrared spectroscopy (NIRS) is a noninvasive technique that monitors regional tissue oxygenation reflecting perfusion status. Near-infrared spectroscopy has the ability to continuously and simultaneously monitor tissue perfusion in different organ systems at the bedside without interrupting routine care. Research has demonstrated its benefit in monitoring cerebral, intestinal, and renal perfusion to detect potential ischemic episodes. Near-infrared spectroscopy can augment current physiologic monitoring to increase awareness of abnormal perfusion status in the preterm population and potentially reduce risks associated with many diseases that may lead to ischemic injury."  https://pubmed.ncbi.nlm.nih.gov/22123468/   
+Oxygen moves through our bodies in hemoglobin. Oxygenated hemoglobin is what comes from our lungs and travels to our tissues in order to provide our tissues with the oxygen they need. Deoxygenated hemoglobin is what travels away from our tissues back to our lungs and heart for more oxygen. As we use our brain, oxygenated hemoglobin travels to the areas of the brain we are using and deoxygenated hemoglobin flows away from those areas. The cool thing about the hemoglobin is that light travels through oxygenated and deoxygenated hemoglobin differently. We can use this difference to pick up on the amount of oxygenated and deoxygenated hemoglobin in different areas of the brain... The NIRS system is made up of a cap that is kind of like a swim cap and sources (photo-transmitter probe in the diagram) and detectors (photo-receiver probe in the diagram). The sources are essentially light bulbs that give off light of very specific wavelengths. The detectors pick up on the specific wavelengths of light, and how much light the detectors pick up on tells us how much light came back after traveling through the brain tissue" (We can translate this to our purposes using calve muscles) https://cheathamlab.com/index.php/near-infrared-spectroscopy/ ]
 
 # NIRS Procedure (ANDREA)
 Explain the whole procedure, KEY TO CONNECT TO THE ONLY TWO ARTICLES WRITTEN ABOUT THE NIRS
