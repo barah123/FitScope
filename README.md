@@ -7,8 +7,8 @@ muscle health. A hypothesized strategy is using infrared light. etc, etc.
 # Explanation of NIRS (ANDREA)
 With two lasers, the NIRS is able to measure oxygenated hemoglobin, deoxygenated hemoglobin, total hemoglobin, difference between oxygenated and deoxygenated hemoglobin. EXPAND: explain to how those parameters are indicators of muscle health.
 
-Ideas written by Philip: ## What NIRS measures, and why occlusion
-[ "Near-infrared light (roughly 700–900 nm) penetrates skin, fat and a few
+Ideas written by Philip: [What NIRS measures, and why occlusion
+"Near-infrared light (roughly 700–900 nm) penetrates skin, fat and a few
 centimetres of muscle, and is absorbed differently depending on how much of
 the local haemoglobin/myoglobin pool is carrying oxygen. Measuring
 attenuation at several wavelengths gives a continuous, non-invasive readout
